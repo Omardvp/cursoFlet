@@ -8,9 +8,9 @@ def main(page: Page):
     txt_nueva_tarea = TextField(hint_text='Cual tarea desea agregar?',width=300)
     
     btn_agregar_tarea = ElevatedButton('Agregar',on_click=agregar_tarea_clicked)
-
+    
     page.add(Row([txt_nueva_tarea, btn_agregar_tarea]))
-
+    
 # Ejecuta la aplicacion en modo escritorio:
 flet.app(target=main)
 
